@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        I'm the header
+    </div>
+    <div class="content">
+        <div class="content-sidebar">
+            <a href="#about" id="menuAbout">About</a>
+            <a href="#tasks" id="menuTasks">Tasks</a>
+            <a href="#contact" id="menuContact">Contact</a>
+        </div>
+        <div class="content-pane">
+            <div id="about">
+                AboutYOU
+            </div>
+            <div id="tasks" hidden>
+                <form>
+                    <input id="inputTask" type="text" />
+                    <input id="submitTask" type="submit" onclick="" addTask()" />
+                </form>
+    
+                <div id="tableData"></div>
+            </div>
+            <div id="contact" hidden>
+                Call me
+            </div>
+        </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
+    </div>
+    <div class="footer">
+        I'm the footer
+    </div>
+</body>
+
+</html>

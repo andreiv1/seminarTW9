@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;;
+    margin: 16px;
+    font-family: Montserrat,"Helvetica Neue",Helvetica;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    background-color: darkslategray;
+}
+
+.content{
+    width: 100%;
+    height: 80%;
+    background-color:black;
+    color: white;
+    display: flex;
+}
+
+.content > .content-sidebar {
+    color: white;
+    flex-direction: column;
+    display: flex;
+    width: 15%;
+    background-color: darkgray;    
+    padding: 20px;
+}
+
+.content > .content-pane {
+    padding: 30px;
+    width: 85%;
+    background-color: dark;
+}
+
+.content-sidebar > a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.content-sidebar > a:hover {
+    background-color: mintcream;
+    color: blue;
+    padding: 10px;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;;
+    background-color: darkslateblue;
+}
+
+#taskTable {
+    font-size: 25px;
+}
+
+#taskTable td, th{
+    text-align: left;
+    padding: 5px;
+}
+
+#taskTable > tbody> tr {
+    background-color:salmon;
+}
+
+/* #taskTable > tbody> tr:last-child{
+    background-color:rosybrown;
+} */
+
+@media screen and (max-width:500px){
+    .content > .content-sidebar {
+        display: none;
+    }
+    .content > .content-pane{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body {
+        font-size: 10px;
+    }
+    
+    form {
+        display: none;
+    }
+
+    #taskTable {
+        font-size: 10px;
+    }
+}
